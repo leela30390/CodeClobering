@@ -2,9 +2,11 @@ public class updateaccts {
             public static boolean triggeronce = true ;
     public static boolean change = true ;
     public  integer i = 0;   
-    public static void createaccmerger()
+    
+public void Test()
     {
-        system.debug('i am here');
+        system.debug('my integer val:' );
+        
     }
     public void updateaccoutandcontact1()
     {
