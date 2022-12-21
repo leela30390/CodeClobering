@@ -1,7 +1,11 @@
 public class updateaccts {    
             public static boolean triggeronce = true ;
     public static boolean change = true ;
-    public  integer i = 0;    
+    public  integer i = 0;   
+    public static void createaccmerger()
+    {
+        system.debug('i am here');
+    }
     public void updateaccoutandcontact1()
     {
         change = false;
@@ -12,17 +16,7 @@ public class updateaccts {
         system.debug('my integer val:' + i);
         
     }
-    public void updateaccoutandcontactCodeClob()
-    {
-        change = false;
-        system.debug('my integer val:' + i);
-        i = i+1;
-        system.debug('my triggeronce boolean val:' + triggeronce );
-        system.debug('my change boolean val:' + change );
-        system.debug('my integer val:' + i);
-        
-    }
-    
+   
     public static void updateaccoutandcontact(set<string> accountids, map<id, contact> accountiddets)
 	{
 		List<Account> updaccts = new List<Account>();
